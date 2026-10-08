@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Advanced Search</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <!-- Dark mode checkbox -->
+
+    <input type="checkbox" id="theme-toggle">
+
+    <div class="site">
+
+
+        <!-- ================= NAVIGATION ================= -->
+
+        <header class="top-links">
+
+            <nav aria-label="Main navigation">
+
+                <a href="index.html">
+                    Google Search
+                </a>
+
+                <a href="images.html">
+                    Image Search
+                </a>
+
+                <a href="advanced.html" class="active">
+                    Advanced Search
+                </a>
+
+                <label
+                    for="theme-toggle"
+                    class="theme-button"
+                    aria-label="Toggle dark mode"
+                >
+                    🌙
+                </label>
+
+            </nav>
+
+        </header>
+
+
+        <!-- ================= MAIN ================= -->
+
+        <main class="advanced-content">
+
+
+            <!-- Page heading -->
+
+            <div class="advanced-header">
+
+                <h1 class="advanced-title">
+                    Advanced Search
+                </h1>
+
+                <p class="advanced-description">
+                    Find pages with specific words, phrases, or exclusions.
+                </p>
+
+            </div>
+
+
+            <!-- Divider -->
+
+            <div class="advanced-divider"></div>
+
+
+            <!-- Search card -->
+
+            <section class="advanced-card">
+
+
+                <div class="advanced-card-header">
+
+                    <h2>
+                        Find pages with...
+                    </h2>
+
+                    <p>
+                        Use the fields below to narrow your search.
+                    </p>
+
+                </div>
+
+
+                <!-- Form -->
+
+                <form
+                    action="https://www.google.com/search"
+                    method="get"
+                    class="advanced-form"
+                >
+
+
+                    <!-- All words -->
+
+                    <div class="advanced-field">
+
+                        <label for="all-words">
+                            All these words:
+                        </label>
+
+                        <div class="advanced-input-group">
+
+                            <input
+                                id="all-words"
+                                type="text"
+                                name="as_q"
+                                autocomplete="off"
+                            >
+
+                            <small>
+                                Pages containing all of these words
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Exact phrase -->
+
+                    <div class="advanced-field">
+
+                        <label for="exact-phrase">
+                            This exact word or phrase:
+                        </label>
+
+                        <div class="advanced-input-group">
+
+                            <input
+                                id="exact-phrase"
+                                type="text"
+                                name="as_epq"
+                                autocomplete="off"
+                            >
+
+                            <small>
+                                Pages containing this exact phrase
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Any words -->
+
+                    <div class="advanced-field">
+
+                        <label for="any-words">
+                            Any of these words:
+                        </label>
+
+                        <div class="advanced-input-group">
+
+                            <input
+                                id="any-words"
+                                type="text"
+                                name="as_oq"
+                                autocomplete="off"
+                            >
+
+                            <small>
+                                Pages containing at least one of these words
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- None words -->
+
+                    <div class="advanced-field">
+
+                        <label for="none-words">
+                            None of these words:
+                        </label>
+
+                        <div class="advanced-input-group">
+
+                            <input
+                                id="none-words"
+                                type="text"
+                                name="as_eq"
+                                autocomplete="off"
+                            >
+
+                            <small>
+                                Exclude pages containing these words
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Submit -->
+
+                    <div class="advanced-button-container">
+
+                        <input
+                            type="submit"
+                            value="Advanced Search"
+                            class="advanced-button"
+                        >
+
+                    </div>
+
+                </form>
+
+            </section>
+
+        </main>
+
+
+        <!-- ================= FOOTER ================= -->
+
+        <footer class="footer">
+
+            <div class="footer-left">
+
+                <a href="#">
+                    About
+                </a>
+
+                <a href="#">
+                    Privacy
+                </a>
+
+            </div>
+
+
+            <div class="footer-center">
+
+                Search Project
+
+            </div>
+
+
+            <div class="footer-right">
+
+                <a href="#">
+                    Settings
+                </a>
+
+                <a href="#">
+                    Help
+                </a>
+
+            </div>
+
+        </footer>
+
+    </div>
+
+</body>
+
+</html>

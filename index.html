@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Kaizen Search - a clean and simple web search interface."
+    >
+
+    <title>Kaizen Search</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+    <!--
+        CSS-only theme switch.
+        JavaScript is not required.
+    -->
+    <input
+        type="checkbox"
+        id="theme-toggle"
+        class="theme-toggle"
+    >
+
+
+    <div class="site">
+
+
+        <!-- ================= HEADER ================= -->
+
+        <header class="header">
+
+            <div class="brand">
+
+                <a href="index.html" class="brand-link">
+
+                    <span class="brand-mark">K</span>
+
+                    <span class="brand-name">
+                        Kaizen
+                    </span>
+
+                </a>
+
+            </div>
+
+
+            <nav
+                class="navigation"
+                aria-label="Main navigation"
+            >
+
+                <a
+                    href="index.html"
+                    class="nav-link active"
+                >
+                    Web
+                </a>
+
+                <a
+                    href="images.html"
+                    class="nav-link"
+                >
+                    Images
+                </a>
+
+                <a
+                    href="advanced.html"
+                    class="nav-link"
+                >
+                    Advanced
+                </a>
+
+                <label
+                    for="theme-toggle"
+                    class="theme-button"
+                    title="Toggle dark mode"
+                >
+                    <span class="sun">☀</span>
+                    <span class="moon">☾</span>
+                </label>
+
+            </nav>
+
+        </header>
+
+
+        <!-- ================= MAIN ================= -->
+
+        <main class="hero">
+
+
+            <div class="hero-content">
+
+
+                <!-- Brand -->
+
+                <div class="hero-brand">
+
+                    <div class="hero-mark">
+                        K
+                    </div>
+
+                    <h1>
+                        Kaizen
+                    </h1>
+
+                </div>
+
+
+                <p class="hero-tagline">
+                    Search better. Discover more.
+                </p>
+
+
+                <p class="hero-description">
+                    A simple, focused search experience built around
+                    continuous improvement.
+                </p>
+
+
+                <!-- ================= SEARCH ================= -->
+
+                <div class="search-area">
+
+                    <form
+                        action="https://www.google.com/search"
+                        method="get"
+                        class="search-form"
+                    >
+
+                        <div class="search-box-wrapper">
+
+                            <span
+                                class="search-symbol"
+                                aria-hidden="true"
+                            >
+                                ⌕
+                            </span>
+
+
+                            <label
+                                for="web-search"
+                                class="visually-hidden"
+                            >
+                                Search the web
+                            </label>
+
+
+                            <input
+                                id="web-search"
+                                type="search"
+                                name="q"
+                                class="search-input"
+                                placeholder="Search the web..."
+                                autocomplete="off"
+                                spellcheck="false"
+                            >
+
+
+                            <span
+                                class="keyboard-hint"
+                                aria-hidden="true"
+                            >
+                                /
+                            </span>
+
+                        </div>
+
+
+                        <div class="search-actions">
+
+                            <button
+                                type="submit"
+                                class="primary-button"
+                            >
+                                Search
+                            </button>
+
+
+                            <button
+                                type="submit"
+                                name="btnI"
+                                value="1"
+                                class="secondary-button"
+                            >
+                                I'm Feeling Lucky
+                            </button>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+
+                <!-- ================= QUICK LINKS ================= -->
+
+                <div class="quick-links">
+
+                    <a href="images.html">
+                        <span>◈</span>
+                        Image Search
+                    </a>
+
+                    <a href="advanced.html">
+                        <span>⚙</span>
+                        Advanced Search
+                    </a>
+
+                </div>
+
+
+            </div>
+
+
+        </main>
+
+
+        <!-- ================= FEATURES ================= -->
+
+        <section class="feature-strip">
+
+            <div class="feature">
+
+                <div class="feature-icon">
+                    ◎
+                </div>
+
+                <div>
+
+                    <h2>
+                        Simple
+                    </h2>
+
+                    <p>
+                        A focused interface without unnecessary clutter.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">
+                    ↗
+                </div>
+
+                <div>
+
+                    <h2>
+                        Fast
+                    </h2>
+
+                    <p>
+                        Get straight to the search without distractions.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="feature">
+
+                <div class="feature-icon">
+                    ◐
+                </div>
+
+                <div>
+
+                    <h2>
+                        Adaptive
+                    </h2>
+
+                    <p>
+                        Designed to work comfortably across screen sizes.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FOOTER ================= -->
+
+        <footer class="footer">
+
+            <div class="footer-brand">
+
+                <span class="footer-mark">
+                    K
+                </span>
+
+                <span>
+                    Kaizen Search
+                </span>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="#">
+                    About
+                </a>
+
+                <a href="#">
+                    Privacy
+                </a>
+
+                <a href="#">
+                    Help
+                </a>
+
+            </div>
+
+
+            <div class="footer-note">
+
+                Improve every search.
+
+            </div>
+
+        </footer>
+
+
+    </div>
+
+</body>
+
+</html>
